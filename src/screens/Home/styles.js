@@ -1,5 +1,9 @@
 import styled from 'styled-components/native';
 
+export const Container = styled.View`
+    flex: 1;
+`;
+
 export const Header = styled.View`
     flex: 1;
     background-color: #0D0D0D;
@@ -9,14 +13,14 @@ export const Header = styled.View`
 export const Logo = styled.Image`
     width: 120px;
     height: 35px;
-    margin-top: 70px;
+    margin-top: 80px;
 `;
 
 export const HeaderWrapper = styled.View`
     flex-direction: row;
     flex: 1;
     position: absolute;
-    margin: 130px 15px 0;
+    margin: -30px 15px 0;
 `;
 
 export const TextInput = styled.TextInput`
@@ -26,6 +30,7 @@ export const TextInput = styled.TextInput`
     margin-right: 5px;
     border-radius: 8px;
     padding-left: 15px;
+    color: #F2F2F2;
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -54,6 +59,31 @@ export const BodyHeader = styled.View`
     border-bottom-color: #333333;
 `;
 
+export const Content = styled.View`
+    width: 100%;
+    margin: 20px 20px 0;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const WrapperOpen = styled.View`
+    flex-direction: row;
+    align-items: center;
+`;
+
+export const WrapperFinished = styled.View`
+    flex-direction: row;
+    align-items: center;
+`;
+
+export const Number = styled.View`
+    background-color: #333333;
+    padding: 1px 11px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-left: 8px;
+`;
+
 export const OpenTasks = styled.Text`
     font-size: 14px;
     font-weight: bold;
@@ -67,5 +97,11 @@ export const FinishedTasks = styled.Text`
 `;
 
 export const TaskList = styled.FlatList`
+    width: 100%;
+    height: 470px;
+`;
 
+export const Text = styled.Text`
+    color: #D9D9D9;
+    font-weight: bold;
 `;
